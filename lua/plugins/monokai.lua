@@ -8,7 +8,7 @@ return {
         Visual = { bg = "#5c6370", style = "bold" },
         CurSearch     = { fg = "#1e1e1e", bg = "#f29c38" },
         LineNr        = { fg = "#aaaaaa" },
-        CursorLineNr  = { fg = "#fd971f" },
+        CursorLineNr  = { fg = "#ffffff" },
       }
     })
   end,
