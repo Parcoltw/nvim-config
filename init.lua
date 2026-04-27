@@ -31,6 +31,7 @@ vim.opt.expandtab = true
 vim.opt.softtabstop = 4  
 vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>', { silent = true })
 vim.opt.clipboard = "unnamedplus"
+vim.opt.cursorline = true
 
 require("lazy").setup({
   spec = {
