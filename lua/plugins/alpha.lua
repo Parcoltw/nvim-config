@@ -31,14 +31,13 @@ return {
     dashboard.section.header.val = vim.split(get_fortune(), "\n")
     dashboard.section.header.opts.hl = "AlphaHeader"
     dashboard.section.buttons.val = {
-      dashboard.button("e", "󰈔   New File",        ":ene <BAR> startinsert<CR>"),
-      dashboard.button("f", "󰈞   Find File",       ":Telescope find_files<CR>"),
-      dashboard.button("r", "󰄉   Recent Files",    ":Telescope oldfiles<CR>"),
-      dashboard.button("t", "󰊄   Find Text",       ":Telescope live_grep<CR>"),
-      dashboard.button("p", "󰒲   Plugins",         ":Lazy<CR>"),
-      dashboard.button("u", "󰚰   Update Plugins",  ":Lazy update<CR>"),
-      dashboard.button("c", "󰒓   Configuration",   ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
-      dashboard.button("q", "󰈆   Quit",            ":qa<CR>"),
+      dashboard.button("e",        "󰈔   New File",        ":ene <BAR> startinsert<CR>"),
+      dashboard.button("SPC f f",  "󰈞   Find File",       ":Telescope find_files<CR>"),
+      dashboard.button("SPC f r",  "󰄉   Recent Files",    ":Telescope oldfiles<CR>"),
+      dashboard.button("SPC f g",  "󰊄   Grep Text",       ":Telescope live_grep<CR>"),
+      dashboard.button("p",        "󰒲   Plugins",         ":Lazy<CR>"),
+      dashboard.button("c",        "󰒓   Config",          ":Telescope find_files cwd=~/.config/nvim/<CR>"),
+      dashboard.button("q",        "󰈆   Quit",            ":qa<CR>"),
     }
     local function get_day_of_week()
       return os.date("%A")
