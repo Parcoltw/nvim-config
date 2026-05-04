@@ -32,6 +32,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true  
 vim.opt.softtabstop = 4  
 
+vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
@@ -40,8 +41,8 @@ vim.opt.signcolumn = "yes"
 vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>", { silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("x", "p", '\"_dP')
 vim.keymap.set({"n", "v"}, "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set({"n", "v"}, "<leader>p", '"+p')
 
 vim.opt.cursorline = true
