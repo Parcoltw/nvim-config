@@ -35,7 +35,7 @@ return {
       dashboard.button("SPC f f",  "󰈞   Find File",       ":Telescope find_files<CR>"),
       dashboard.button("SPC f r",  "󰄉   Recent Files",    ":Telescope oldfiles<CR>"),
       dashboard.button("SPC f g",  "󰊄   Grep Text",       ":Telescope live_grep<CR>"),
-      dashboard.button("p",        "󰒲   Plugins",         ":Lazy<CR>"),
+      dashboard.button("l",        "󰒲   Lazy",         ":Lazy<CR>"),
       dashboard.button("c",        "󰒓   Config",          ":Telescope find_files cwd=~/.config/nvim/<CR>"),
       dashboard.button("q",        "󰈆   Quit",            ":qa<CR>"),
     }
